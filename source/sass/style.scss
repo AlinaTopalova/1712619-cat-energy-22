@@ -1,14 +1,14 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "scaffolding.scss";
-@import "header.scss";
-@import "promo.scss";
-@import "button.scss";
-@import "nutrition.scss";
-@import "advantages.scss";
-@import "example.scss";
-@import "footer.scss";
-@import "container.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/button.scss";
+@import "blocks/nutrition.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/footer.scss";
+@import "blocks/container.scss";
 
 body {
   box-sizing: border-box;
