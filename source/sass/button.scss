@@ -9,9 +9,11 @@
   min-width: 280px;
   min-height: 40px;
   background-color: $basic-green;
+
   &:hover {
     background-color: $basic-dark-green;
   }
+
   &:focus {
     color: $basic-white-opacity;
     background-color: $basic-dark-green;

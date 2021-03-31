@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   min-height: 480px;
-  background-image: url(../img/promo/promo-bg.jpg);
+  background-image: url("../img/promo/promo-bg.jpg");
   background-repeat: no-repeat;
-  background-position-x: center ;
+  background-position-x: center;
   padding-top: 27px;
 }
 
@@ -18,8 +18,9 @@
   font-weight: 400;
   text-align: center;
   color: $basic-white;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 25px;
+
   &::before {
     position: absolute;
     content: "";
@@ -27,7 +28,7 @@
     height: 270px;
     top: 150px;
     left: -10px;
-    background-image: url(../img/promo/promo-product.png);
+    background-image: url("../img/promo/promo-product.png");
     background-repeat: no-repeat;
   }
 }

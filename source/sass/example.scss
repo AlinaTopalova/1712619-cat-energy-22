@@ -4,7 +4,6 @@
   padding-right: 20px;
   padding-bottom: 31px;
   background-color: $basic-grey2;
-
 }
 
 .example__title {
@@ -17,7 +16,7 @@
 }
 
 .example__descr {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -56,7 +55,7 @@
 }
 
 .example__label {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -71,7 +70,7 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 42px;
   text-align: center;
 }
