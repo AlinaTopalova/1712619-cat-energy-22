@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <header class="header-top">
+    <header class="header">
       <div class="container">
-        <a class="header-top__logo">
+        <a class="header__logo">
           <img src="img/logo/logo.svg" width="190" height="38" alt="CAT ENERGY">
         </a>
         <nav class="main-nav">
@@ -16,15 +18,15 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="#">Каталог продукции</a></li>
-            <li class="main-nav__item"><a href="#">Подбор программы</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main-content">
       <section class="promo">
-        <h1 class="promo__title">Функциональное
+        <h1 class="promo__title">Функциональное<br>
           питание для котов</h1>
         <p class="promo__subtitle">Занялся собой? Займись котом!</p>
         <a href="#" class="button promo__button">Подобрать программу</a>
@@ -67,20 +69,22 @@
           </ul>
         </div>
       </section>
-      <section class="example">
-        <div class="container">
+          <section class="example">
+            <div class="container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__descr">Борис сбросил 5 кг за 2 месяца, просто<br>
             заменив свой обычный корм на Cat Energy<br> Slim. Отличный результат без изнуряющих<br>
             тренировок! При этом он не менял своих<br> привычек и по-прежнему спит по 16 часов<br> в день.</p>
           <ul class="example__list">
             <li class="example__item">
-              <span class="example__amount">5 кг</span>
-              <p class="example__descr">снижение веса</p>
+              <span class="example__value">5 кг</span>
+              <span class="example__label">снижение</span>
+              <span class="example__label">веса</span>
             </li>
             <li class="example__item">
-              <span class="example__amount">60 дней</span>
-              <p class="example__descr">затрачено времени</p>
+              <span class="example__value">60 дней</span>
+              <span class="example__label">затрачено</span>
+              <span class="example__label">времени</span>
             </li>
           </ul>
           <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
@@ -90,45 +94,49 @@
           <div class="example__slider">
             <img src="img/slider/thin-cat.png" width="251" height="240" alt="Кот с нормальным весом">
           </div>
-          <button class="example__slider-button example__slider-button--active" aria-label="Было">Было</button>
-          <div class="example__slider-selector">Переключатель</div>
-          <div class="example__range-filter">Шкала изменений
-            <div class="example__range-toggle" tabindex="0" style="left: 8%" aria-label="Ползунок для изменения веса кота"></div>
+          <div class="example__slider-selectors">
+            <button class="example__slider-button example__slider-button--active" aria-label="Было">Было</button>
+            <div class="example__slider-selector">Переключатель</div>
+            <div class="example__range-filter">Шкала изменений
+              <div class="example__range-toggle" tabindex="0" style="left: 8%" aria-label="Ползунок для изменения веса кота"></div>
+            </div>
+            <button class="example__slider-button" aria-label="Стало">Стало</button>
           </div>
-          <button class="example__slider-button" aria-label="Стало">Стало</button>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <section class="contacts">
+    <footer class="footer">
+      <section class="footer__contacts">
         <div class="container">
-          <h3 class="contacts__title">Приглашаем
+          <div class="footer__contacts-block">
+            <h3 class="footer__contacts-title">Приглашаем
             к сотрудничеству дилеров!</h3>
-          <p class="contacts__address">ул. Большая
+            <p class="footer__contacts-address">ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
+            </div>
         </div>
       </section>
-      <section class="location">
-        <img class="location__map" src="img/location.png" width="320" height="362" alt="Адрес на карте ул. Большая
+      <section class="footer__location">
+        <img class="footer__location-map" src="img/location.png" width="320" height="362" alt="Адрес на карте ул. Большая
         Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
-      <section class="links">
-        <div class="container">
-          <a class="links__logo"><img src="img/logo/footer-logo.svg" width="128" height="24" alt="CAT ENERGY"></a>
-          <div class="links__social">
-            <ul class="links__social-list">
-              <li class="links__social-item">
-                <a class="links__social-link links__social-link--vk" href="https://vk.com/htmlacademy">Вконтакте</a></li>
-              <li class="links__social-item">
-                <a class="links__social-link links__social-link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
-              <li class="links__social-item">
-                <a class="links__social-link links__social-link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a></li>
+      <div class="container">
+        <section class="footer__links">
+          <a class="footer__links-logo"><img src="img/logo/footer-logo.svg" width="128" height="24" alt="CAT ENERGY"></a>
+          <div class="footer__links-social">
+            <ul class="footer__links-social-list">
+              <li class="footer__links-social-item">
+                <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">Вконтакте</a></li>
+              <li class="footer__links-social-item">
+                <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
+              <li class="footer__links-social-item">
+                <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a></li>
             </ul>
           </div>
-          <a class="links__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </section>
+          <a class="footer__links-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

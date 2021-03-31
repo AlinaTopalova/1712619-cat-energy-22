@@ -1,1 +1,50 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "fonts.scss";
+@import "scaffolding.scss";
+@import "header.scss";
+@import "promo.scss";
+@import "button.scss";
+@import "nutrition.scss";
+@import "advantages.scss";
+@import "example.scss";
+@import "footer.scss";
+@import "container.scss";
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-black;
+  background-color: $basic-white;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
