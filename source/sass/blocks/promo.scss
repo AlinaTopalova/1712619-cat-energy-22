@@ -26,8 +26,8 @@
     content: "";
     width: 280px;
     height: 270px;
-    top: 150px;
-    left: -10px;
+    top: 140px;
+    right: -16px;
     background-image: url("../img/promo/promo-product.png");
     background-repeat: no-repeat;
   }
@@ -40,5 +40,6 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-white;
+  margin: 0;
   margin-bottom: 302px;
 }

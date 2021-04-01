@@ -2,7 +2,7 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 31px;
+  padding-bottom: 35px;
   background-color: $basic-grey2;
 }
 
@@ -23,7 +23,7 @@
   line-height: 18px;
   color: $basic-dark-grey;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 39px;
 }
 
 .example__list {
@@ -32,7 +32,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
 
 .example__item {
@@ -42,7 +42,7 @@
 }
 
 .example__item:not(:nth-last-child(1)) {
-  margin-right: 75px;
+  margin-right: 100px;
 }
 
 .example__value {
@@ -51,7 +51,7 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .example__label {
@@ -75,6 +75,10 @@
   text-align: center;
 }
 
+.example__slider img {
+  margin-bottom: 52px;
+}
+
 .example__slider-selectors {
   display: flex;
 }
@@ -82,6 +86,7 @@
 .example__slider-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   border: none;
   background: none;
