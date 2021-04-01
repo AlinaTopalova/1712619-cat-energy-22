@@ -1,0 +1,30 @@
+.advantages {
+  padding-top: 27px;
+  padding-bottom: 42px;
+  padding-left: 20px;
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+  padding-left: 80px;
+}
+
+.advantages__item:not(:nth-last-child(1)) {
+  margin-bottom: 24px;
+}

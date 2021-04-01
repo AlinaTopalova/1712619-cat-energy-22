@@ -1,0 +1,44 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+  background-image: url("../img/promo/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 27px;
+}
+
+.promo__title {
+  position: relative;
+  font-size: 36px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $basic-white;
+  margin: 0;
+  margin-bottom: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 270px;
+    top: 150px;
+    left: -10px;
+    background-image: url("../img/promo/promo-product.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.promo__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic-white;
+  margin-bottom: 302px;
+}

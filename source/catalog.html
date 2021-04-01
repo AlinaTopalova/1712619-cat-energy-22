@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="header-top">
@@ -210,36 +212,38 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
-      <section class="contacts">
+    <footer class="footer">
+      <section class="footer__contacts">
         <div class="container">
-          <h3 class="contacts__title">Приглашаем
+          <div class="footer__contacts-block">
+            <h3 class="footer__contacts-title">Приглашаем
             к сотрудничеству дилеров!</h3>
-          <p class="contacts__address">ул. Большая
+            <p class="footer__contacts-address">ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
+            </div>
         </div>
       </section>
-      <section class="location">
-        <img class="location__map" src="img/location.png" width="320" height="362" alt="Адрес на карте ул. Большая
+      <section class="footer__location">
+        <img class="footer__location-map" src="img/location.png" width="320" height="362" alt="Адрес на карте ул. Большая
         Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
-      <section class="links">
-        <div class="container">
-          <a class="links__logo"><img src="img/logo/footer-logo.svg" width="128" height="24" alt="CAT ENERGY"></a>
-          <div class="links__social">
-            <ul class="links__social-list">
-              <li class="links__social-item">
-                <a class="links__social-link links__social-link--vk" href="https://vk.com/htmlacademy">Вконтакте</a></li>
-              <li class="links__social-item">
-                <a class="links__social-link links__social-link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
-              <li class="links__social-item">
-                <a class="links__social-link links__social-link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a></li>
+      <div class="container">
+        <section class="footer__links">
+          <a class="footer__links-logo"><img src="img/logo/footer-logo.svg" width="128" height="24" alt="CAT ENERGY"></a>
+          <div class="footer__links-social">
+            <ul class="footer__links-social-list">
+              <li class="footer__links-social-item">
+                <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">Вконтакте</a></li>
+              <li class="footer__links-social-item">
+                <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
+              <li class="footer__links-social-item">
+                <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a></li>
             </ul>
           </div>
-          <a class="links__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </section>
+          <a class="footer__links-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
