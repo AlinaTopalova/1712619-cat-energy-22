@@ -1,0 +1,226 @@
+.form {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.form__questionary {
+  padding-bottom: 21px;
+}
+
+.form__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.form__subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*form-data*/
+
+.form__data-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__data-item:not(:nth-last-child(1)) {
+  margin-bottom: 13px;
+}
+
+.form__data-item:nth-last-child(1) {
+  margin-bottom: 52px;
+}
+
+.form__data-item {
+  display: flex;
+}
+
+.form__data-item label {
+  align-self: center;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+  margin-right: 13px;
+}
+
+.form__data-item input {
+  flex-grow: 1;
+  padding-left: 16px;
+  min-height: 46px;
+  border: 1px solid $basic-grey3;
+}
+
+.form__data-item input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+}
+
+/*form-nutrition*/
+
+.form__nutrition-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__nutrition-item:not(:nth-last-child(1)) {
+  margin-bottom: 25px;
+}
+
+.form__nutrition-item:nth-last-child(1) {
+  margin-bottom: 50px;
+}
+
+.form__nutrition-item label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey3;
+  margin-left: 45px;
+}
+
+
+/*form-contacts*/
+
+.form__contacts-legend {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.form__contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__contacts-item:not(:nth-last-child(1)) {
+  margin-bottom: 13px;
+}
+
+.form__contacts-item:nth-last-child(1) {
+  margin-bottom: 23px;
+}
+
+.form__contacts-item {
+  display: flex;
+}
+
+.form__contacts-item label {
+  align-self: center;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+  margin-right: 11px;
+}
+
+.form__contacts-item input {
+  flex-grow: 1;
+  padding-left: 15px;
+  min-height: 46px;
+  border: 1px solid $basic-grey3;
+}
+
+.form__contacts-item input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+}
+
+/*form-comment*/
+
+.form__comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__comment-title {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.form__comment-input {
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-bottom: 9px;
+  height: 150px;
+  margin-bottom: 23px;
+}
+
+.form__comment-input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+}
+
+/*extra*/
+
+.form__extra-legend {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.form__extra-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__extra-item:not(:nth-last-child(1)) {
+  margin-bottom: 25px;
+}
+
+.form__extra-item:nth-last-child(1) {
+  margin-bottom: 40px;
+}
+
+.form__extra-item label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-grey3;
+  margin-left: 45px;
+}
+
+/*form-button*/
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+}
+
+/*form-notice*/
+
+.form__notice {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+}

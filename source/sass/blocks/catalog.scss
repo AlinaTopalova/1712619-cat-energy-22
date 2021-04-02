@@ -1,0 +1,137 @@
+.catalog {
+  padding-top: 27px;
+}
+
+.catalog__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 49px;
+}
+
+.catalog__products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+}
+
+/*catalog-all*/
+
+.catalog__all {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.catalog__all-icon {
+  display: block;
+  margin-bottom: 29px;
+}
+
+.catalog__all-title {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.catalog__all-subtitle {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $basic-dark-grey;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.catalog__all-button {
+  background-color: $basic-grey;
+  color: $basic-dark-grey;
+
+  &:hover {
+    background-color: $basic-dark-grey1;
+  }
+
+  &:focus {
+    color: $basic-grey-opacity;
+  }
+}
+
+/*extra*/
+
+.catalog__extra {
+  padding-top: 25px;
+  padding-bottom: 18px;
+}
+
+.catalog__extra-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__extra-item:not(:nth-last-child(1)) {
+  margin-bottom: 33px;
+}
+
+.catalog__extra-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.catalog__extra-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-dark-grey3;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.catalog__extra-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.catalog__extra-price-label {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-dark-grey;
+  margin: 0;
+}
+
+.catalog__extra-price-value {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-dark-grey;
+  margin: 0;
+}
+
+/*bonus*/
+
+.catalog-bonus {
+  padding-top: 39px;
+  padding-bottom: 35px;
+}

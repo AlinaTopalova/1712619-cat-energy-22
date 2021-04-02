@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 46px;
   padding-left: 20px;
 }
 
@@ -8,7 +8,8 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-bottom: 38px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .advantages__list {
@@ -18,13 +19,14 @@
 }
 
 .advantages__item {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
-  padding-left: 80px;
+  padding-left: 70px;
 }
 
 .advantages__item:not(:nth-last-child(1)) {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
