@@ -3,11 +3,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 480px;
   background-image: url("../img/promo/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+    padding-top: 99px;
+    padding-bottom: 266px;
+  }
 }
 
 .promo__title {
@@ -21,6 +32,23 @@
   margin: 0;
   margin-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 5px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 41px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -30,6 +58,22 @@
     right: -16px;
     background-image: url("../img/promo/promo-product.png");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 709px;
+      height: 609px;
+      top: 202px;
+      right: -209px;
+      background-image: url("../img/promo/promo-product-big.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+      top: -83px;
+      right: -506px;
+      background-image: url("../img/promo/promo-product-middle.png");
+    }
   }
 }
 
@@ -42,4 +86,28 @@
   color: $basic-white;
   margin: 0;
   margin-bottom: 302px;
+
+  @media (min-width: $tablet-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 5px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__button {
+    align-self: flex-start;
+    z-index: 1;
+  }
 }
