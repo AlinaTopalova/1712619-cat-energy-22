@@ -3,10 +3,6 @@
   padding-bottom: 32px;
 }
 
-.form__questionary {
-  padding-bottom: 21px;
-}
-
 .form__title {
   font-size: 36px;
   line-height: 36px;
@@ -203,7 +199,6 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $basic-dark-grey3;
   margin-left: 45px;
 }
 
@@ -213,6 +208,7 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
+  margin-bottom: 21px;
 }
 
 /*form-notice*/
@@ -223,4 +219,243 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
+}
+
+
+/*@media tablet*/
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-top: 51px;
+    padding-left: 40px;
+    padding-right: 37px;
+    padding-bottom: 72px;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .form__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  /*data tablet*/
+
+  .form__data-list {
+    margin-bottom: 72px;
+  }
+
+  .form__data-item label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 17px;
+  }
+
+  .form__data-item input {
+    padding-left: 18px;
+    min-height: 52px;
+  }
+
+  .form__data-item input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__data-item:not(:nth-last-child(1)) {
+    margin-bottom: 20px;
+  }
+
+  /*nutrition tablet*/
+
+  .form__nutrition-list {
+    border: 1px solid $basic-grey3;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    margin-bottom: 75px;
+  }
+
+  .form__nutrition-item label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 87px;
+  }
+
+  .form__nutrition-item:not(:nth-last-child(1)) {
+    margin-bottom: 23px;
+  }
+
+  .form__nutrition-item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  /*contacts tablet*/
+
+  .form__contacts-legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form__contacts-item label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 19px;
+  }
+
+  .form__contacts-item input {
+    min-height: 52px;
+    padding-left: 22px;
+  }
+
+  .form__contacts-item:nth-last-child(1) input {
+    padding-left: 16px;
+  }
+
+  .form__contacts-item input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contacts-item:not(:nth-last-child(1)) {
+    margin-bottom: 20px;
+  }
+
+  .form__contacts-list {
+    margin-bottom: 65px;
+  }
+
+  /*comment tablet*/
+
+  .form__comment-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form__comment-input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__comment-input {
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 10px;
+    height: 174px;
+    margin-bottom: 65px;
+  }
+
+  /*extra tablet*/
+
+  .form__extra-legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 63px;
+  }
+
+  .form__extra-list {
+    display: grid;
+    grid-template-columns: 221px 1fr;
+    column-gap: 124px;
+    row-gap: 42px;
+    margin-bottom: 58px;
+  }
+
+  .form__extra-item:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+  }
+
+  .form__extra-item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .form__extra-item label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 59px;
+  }
+
+  /*button tablet*/
+
+  .form__button-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__button {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .form__notice {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 61px;
+  }
+}
+
+/*@media desktop*/
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 63px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 82px;
+  }
+
+  .form__title {
+    margin-bottom: 56px;
+  }
+
+  .form__data-nutrition-wrap {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
+
+  .form__data-item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .form__data-list {
+    margin-bottom: 68px;
+  }
+
+  .form__nutrition-list {
+    margin-bottom: 0;
+  }
+
+  /*contacts desktop*/
+
+  .form__contacts-list {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 78px;
+    margin-bottom: 45px;
+  }
+
+  /*extra desktop*/
+  .form__extra-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 68px;
+  }
+
+  /*button desktop*/
+  .form__button {
+    width: 568px;
+  }
+
+  .form__notice {
+    margin-left: 81px;
+  }
 }
