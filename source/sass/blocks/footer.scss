@@ -1,12 +1,12 @@
+.footer__wrap {
+  background-color: $basic-grey;
+}
+
 .footer__contacts {
   display: flex;
   justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .footer__contacts-title {
@@ -68,7 +68,19 @@
 }
 
 .footer__links-copyright {
+  position: relative;
   align-self: flex-start;
+}
+
+.footer__links-copyright::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 0;
+  width: 281px;
+  height: 34px;
+  background-image: url("../../img/social/html-academy.png");
+  background-repeat: no-repeat;
 }
 
 
@@ -102,7 +114,33 @@
   }
 
   .footer__links {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 158px 129px 163px;
+    column-gap: 130px;
+  }
+
+  .footer__links-copyright {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .footer__links-copyright::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -2px;
+    width: 163px;
+    height: 34px;
+    background-image: url("../../img/social/html-academy-small.png");
+    background-repeat: no-repeat;
+  }
+}
+
+/*@media desktop*/
+
+@media (min-width: $desktop-width) {
+  .footer__contacts {
+    display: none;
   }
 }
