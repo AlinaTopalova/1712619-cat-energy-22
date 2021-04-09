@@ -49,7 +49,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     background-image: none;
-    padding-top: 50px;
+    padding-top: 52px;
     padding-bottom: 526px;
   }
 
@@ -96,8 +96,20 @@
 @media (min-width: $desktop-width) {
   .promo {
     background-image: none;
-    padding-top: 99px;
+    padding-top: 125px;
     padding-bottom: 266px;
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    top: -100px;
+    left: 530px;
+    background-image: url("../../img/promo/promo-bg-big.png");
+    background-repeat: no-repeat;
+    z-index: -1;
   }
 
   .promo__title {

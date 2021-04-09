@@ -15,20 +15,64 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 5px;
 }
 
 .advantages__item {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
-  padding-left: 70px;
+  padding-left: 80px;
 }
 
 .advantages__item:not(:nth-last-child(1)) {
   margin-bottom: 26px;
+}
+
+.advantages__item-first::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: -1px;
+  left: 0;
+  background-image: url("../../img/advantages/leaf.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item-second::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: -1px;
+  left: 0;
+  background-image: url("../../img/advantages/water.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item-third::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: -1px;
+  left: 0;
+  background-image: url("../../img/advantages/fork.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item-fourth::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: -1px;
+  left: 0;
+  background-image: url("../../img/advantages/clock.svg");
+  background-repeat: no-repeat;
 }
 
 
@@ -36,8 +80,20 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
+    position: relative;
     padding-top: 45px;
     padding-bottom: 8px;
+  }
+
+  .advantages::after {
+    position: absolute;
+    content: "";
+    width: 768px;
+    height: 1px;
+    top: 781px;
+    left: -30px;
+    background-color: $basic-grey6;
+    background-repeat: no-repeat;
   }
 
   .advantages__title {
@@ -74,6 +130,86 @@
   .advantages__item:nth-child(4) {
     width: 270px;
   }
+
+  .advantages__item-first::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+    background-image: url("../../img/advantages/leaf-big.svg");
+  }
+
+  .advantages__item-second::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+    background-image: url("../../img/advantages/water-big.svg");
+  }
+
+  .advantages__item-third::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+    background-image: url("../../img/advantages/fork-big.svg");
+  }
+
+  .advantages__item-fourth::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: -1px;
+    background-image: url("../../img/advantages/clock-big.png");
+  }
+
+  .advantages__item-first::after {
+    position: absolute;
+    content: "";
+    width: 112px;
+    height: 280px;
+    top: 40px;
+    left: 126px;
+    background-image: url("../../img/advantages/first.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .advantages__item-second::after {
+    position: absolute;
+    content: "";
+    width: 134px;
+    height: 280px;
+    top: 2px;
+    left: 112px;
+    background-image: url("../../img/advantages/second.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .advantages__item-third::after {
+    position: absolute;
+    content: "";
+    width: 134px;
+    height: 280px;
+    top: 0;
+    left: 112px;
+    background-image: url("../../img/advantages/third.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .advantages__item-fourth::after {
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 280px;
+    top: 0;
+    left: 112px;
+    background-image: url("../../img/advantages/fourth.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 
@@ -82,12 +218,26 @@
 @media (min-width: $desktop-width) {
   .advantages {
     padding-top: 71px;
+    padding-bottom: 0;
+  }
+
+  .advantages::after {
+    display: none;
   }
 
   .advantages__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-right: 0;
+  }
+
+  .advantages__item:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+  }
+
+  .advantages__item:nth-last-child(1) {
+    margin-bottom: 0;
   }
 
   .advantages__item:not(:nth-child(2n)) {
@@ -96,5 +246,32 @@
 
   .advantages__item:nth-child(4) {
     width: 250px;
+  }
+
+  .advantages__item-second::before {
+    left: 0;
+  }
+
+  .advantages__item-third::before {
+    left: 0;
+  }
+
+  .advantages__item-fourth::before {
+    left: -1px;
+  }
+
+  .advantages__item-second::after {
+    top: 0;
+    left: 125px;
+  }
+
+  .advantages__item-third::after {
+    top: 0;
+    left: 115px;
+  }
+
+  .advantages__item-fourth::after {
+    top: 0;
+    left: 123px;
   }
 }

@@ -11,6 +11,7 @@
 }
 
 .nutrition__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -22,6 +23,38 @@
   padding-left: 20px;
 }
 
+.nutrition__item-first::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 53px;
+  top: 20px;
+  left: 22px;
+  background-image: url("../../img/nutrition/cat.png");
+  background-repeat: no-repeat;
+}
+
+.nutrition__item-second::before {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 50px;
+  top: 24px;
+  left: 14px;
+  background-image: url("../../img/nutrition/puma.png");
+  background-repeat: no-repeat;
+}
+
+.nutrition__item::after {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 1px;
+  top: 208px;
+  left: 20px;
+  background-color: $basic-dark-grey5;
+}
+
 .nutrition__item:not(:nth-last-child(1)) {
   margin-bottom: 20px;
 }
@@ -31,7 +64,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
+  padding-left: 71px;
   margin: 0;
   margin-bottom: 29px;
 }
@@ -47,6 +80,7 @@
 }
 
 .nutrition__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400px;
@@ -54,6 +88,31 @@
   color: $basic-black;
 }
 
+.nutrition__link:focus {
+  opacity: 0.3;
+}
+
+.nutrition__link::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 11px;
+  top: 2px;
+  left: 100px;
+  background-image: url("../../img/nutrition/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.nutrition__link:hover::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 11px;
+  top: 2px;
+  left: 100px;
+  background-image: url("../../img/nutrition/arrow-big.svg");
+  background-repeat: no-repeat;
+}
 
 /*@media tablet*/
 
@@ -74,6 +133,7 @@
   }
 
   .nutrition__title {
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
@@ -98,6 +158,42 @@
   .nutrition__descr-small {
     width: 340px;
   }
+
+  .nutrition__item-first::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 211px;
+    top: 82px;
+    left: 446px;
+    background-image: url("../../img/nutrition/cat-big.png");
+    background-repeat: no-repeat;
+  }
+
+  .nutrition__item-second::before {
+    position: absolute;
+    content: "";
+    width: 268px;
+    height: 200px;
+    top: 92px;
+    left: 412px;
+    background-image: url("../../img/nutrition/puma-big.png");
+    background-repeat: no-repeat;
+  }
+
+  .nutrition__link::before {
+    top: 11px;
+    left: 132px;
+  }
+
+  .nutrition__link:hover::before {
+    top: 11px;
+    left: 132px;
+  }
+
+  .nutrition__item::after {
+    display: none;
+  }
 }
 
 /*@media desktop*/
@@ -113,7 +209,7 @@
   .nutrition__item {
     width: 570px;
     height: 374px;
-    padding-top: 79px;
+    padding-top: 77px;
   }
 
   .nutrition__item:not(:nth-last-child(1)) {
@@ -123,7 +219,7 @@
 
   .nutrition__title {
     margin-left: 161px;
-    margin-bottom: 74px;
+    margin-bottom: 75px;
   }
 
   .nutrition__descr {
@@ -138,5 +234,33 @@
 
   .nutrition__descr-small {
     width: 457px;
+  }
+
+  .nutrition__item-first::before {
+    width: 100px;
+    height: 106px;
+    top: 40px;
+    left: 52px;
+    background-image: url("../../img/nutrition/cat-middle.png");
+    background-repeat: no-repeat;
+  }
+
+  .nutrition__item-second::before {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    left: 34px;
+    background-image: url("../../img/nutrition/puma-middle.png");
+    background-repeat: no-repeat;
+  }
+
+  .nutrition__link::before {
+    top: 8px;
+    left: 134px;
+  }
+
+  .nutrition__link:hover::before {
+    top: 8px;
+    left: 134px;
   }
 }
