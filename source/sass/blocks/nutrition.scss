@@ -4,10 +4,11 @@
 
 .nutrition__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .nutrition__item {
@@ -23,25 +24,25 @@
   padding-left: 20px;
 }
 
-.nutrition__item-first::before {
+.nutrition__item--cat::before {
   position: absolute;
   content: "";
   width: 50px;
   height: 53px;
   top: 20px;
   left: 22px;
-  background-image: url("../../img/nutrition/cat.png");
+  background-image: url("../img/nutrition/cat.svg");
   background-repeat: no-repeat;
 }
 
-.nutrition__item-second::before {
+.nutrition__item--puma::before {
   position: absolute;
   content: "";
   width: 67px;
   height: 50px;
   top: 24px;
   left: 14px;
-  background-image: url("../../img/nutrition/puma.png");
+  background-image: url("../img/nutrition/puma.svg");
   background-repeat: no-repeat;
 }
 
@@ -99,7 +100,7 @@
   height: 11px;
   top: 2px;
   left: 100px;
-  background-image: url("../../img/nutrition/arrow.svg");
+  background-image: url("../img/nutrition/arrow.svg");
   background-repeat: no-repeat;
 }
 
@@ -110,7 +111,7 @@
   height: 11px;
   top: 2px;
   left: 100px;
-  background-image: url("../../img/nutrition/arrow-big.svg");
+  background-image: url("../img/nutrition/arrow-big.svg");
   background-repeat: no-repeat;
 }
 
@@ -159,26 +160,20 @@
     width: 340px;
   }
 
-  .nutrition__item-first::before {
-    position: absolute;
-    content: "";
+  .nutrition__item--cat::before {
     width: 200px;
     height: 211px;
     top: 82px;
     left: 446px;
-    background-image: url("../../img/nutrition/cat-big.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/nutrition/cat-tablet.svg");
   }
 
-  .nutrition__item-second::before {
-    position: absolute;
-    content: "";
+  .nutrition__item--puma::before {
     width: 268px;
     height: 200px;
     top: 92px;
     left: 412px;
-    background-image: url("../../img/nutrition/puma-big.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/nutrition/puma-tablet.svg");
   }
 
   .nutrition__link::before {
@@ -208,7 +203,6 @@
 
   .nutrition__item {
     width: 570px;
-    height: 374px;
     padding-top: 77px;
   }
 
@@ -236,22 +230,20 @@
     width: 457px;
   }
 
-  .nutrition__item-first::before {
+  .nutrition__item--cat::before {
     width: 100px;
     height: 106px;
     top: 40px;
     left: 52px;
-    background-image: url("../../img/nutrition/cat-middle.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/nutrition/cat-desktop.svg");
   }
 
-  .nutrition__item-second::before {
+  .nutrition__item--puma::before {
     width: 134px;
     height: 100px;
     top: 47px;
     left: 34px;
-    background-image: url("../../img/nutrition/puma-middle.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/nutrition/puma-desktop.svg");
   }
 
   .nutrition__link::before {

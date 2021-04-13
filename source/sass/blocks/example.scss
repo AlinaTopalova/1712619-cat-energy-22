@@ -52,7 +52,7 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .example__label {
@@ -89,7 +89,7 @@
   height: 56px;
   top: -15px;
   left: 0;
-  background-image: url("../../img/example/back-weight.svg");
+  background-image: url("../img/example/back-weight.svg");
   background-repeat: no-repeat;
 }
 
@@ -104,14 +104,14 @@
   height: 56px;
   top: -15px;
   left: 0;
-  background-image: url("../../img/example/back-time.svg");
+  background-image: url("../img/example/back-time.svg");
   background-repeat: no-repeat;
 }
 
 .example__slider-first {
   width: 311px;
   height: 250px;
-  background-image: url("../../img/slider/cat-fat.png");
+  background-image: url("../img/slider/cat-fat.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
@@ -121,7 +121,7 @@
 .example__slider-second {
   width: 311px;
   height: 250px;
-  background-image: url("../../img/slider/cat-skinny.png");
+  background-image: url("../img/slider/cat-skinny.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
@@ -202,8 +202,8 @@
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
-    padding-top: 43px;
-    padding-bottom: 67px;
+    padding-top: 42px;
+    padding-bottom: 70px;
     background: none;
   }
 
@@ -228,7 +228,7 @@
   .example__descr {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 51px;
   }
 
   .example__data-wrap {
@@ -264,14 +264,14 @@
     width: 162px;
     height: 72px;
     top: 0;
-    background-image: url("../../img/example/back-weight-big.svg");
+    background-image: url("../img/example/back-weight-big.svg");
   }
 
   .example__item-time::before {
     width: 162px;
     height: 72px;
     top: 0;
-    background-image: url("../../img/example/back-time-big.svg");
+    background-image: url("../img/example/back-time-big.svg");
   }
 
   .example__cost {
@@ -291,7 +291,7 @@
   .example__slider-first {
     width: 677px;
     height: 520px;
-    background-image: url("../../img/slider/cat-fat.png");
+    background-image: url("../img/slider/cat-fat.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
@@ -301,7 +301,7 @@
   .example__slider-second {
     width: 677px;
     height: 520px;
-    background-image: url("../../img/slider/cat-skinny.png");
+    background-image: url("../img/slider/cat-skinny.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
@@ -396,7 +396,7 @@
   .example__slider-first {
     width: 677px;
     height: 520px;
-    background-image: url("../../img/slider/cat-fat.png");
+    background-image: url("../img/slider/cat-fat.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
@@ -406,7 +406,7 @@
   .example__slider-second {
     width: 677px;
     height: 520px;
-    background-image: url("../../img/slider/cat-skinny.png");
+    background-image: url("../img/slider/cat-skinny.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;

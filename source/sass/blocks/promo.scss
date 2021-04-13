@@ -6,7 +6,7 @@
   background-image: url("../img/promo/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 27px;
+  padding-top: 28px;
 }
 
 .promo__title {
@@ -18,18 +18,7 @@
   text-align: center;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 25px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 270px;
-    top: 140px;
-    right: -16px;
-    background-image: url("../img/promo/promo-product.png");
-    background-repeat: no-repeat;
-  }
+  margin-bottom: 24px;
 }
 
 .promo__subtitle {
@@ -40,7 +29,12 @@
   text-transform: uppercase;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.promo__button {
+  order: 2;
 }
 
 
@@ -48,6 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    position: relative;
     background-image: none;
     padding-top: 52px;
     padding-bottom: 526px;
@@ -55,39 +50,38 @@
 
   .promo__title {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
     text-align: left;
-    align-self: flex-start;
     margin-left: 5px;
-    margin-bottom: 41px;
-  }
-
-  .promo__title::before {
-    width: 709px;
-    height: 609px;
-    top: 202px;
-    right: -209px;
-    background-image: url("../img/promo/promo-product-big.png");
+    margin-bottom: 42px;
+    align-self: start;
   }
 
   .promo__subtitle {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
     text-align: left;
-    align-self: flex-start;
     margin-left: 5px;
     margin-bottom: 49px;
+    align-self: start;
   }
 
   .promo__button {
+    position: relative;
     align-self: flex-start;
-    z-index: 1;
+  }
+
+  .promo__product {
+    position: absolute;
+    top: 260px;
+    left: -30px;
+    z-index: -1;
   }
 }
 
@@ -96,20 +90,8 @@
 @media (min-width: $desktop-width) {
   .promo {
     background-image: none;
-    padding-top: 125px;
+    padding-top: 107px;
     padding-bottom: 266px;
-  }
-
-  .promo::after {
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    top: -100px;
-    left: 530px;
-    background-image: url("../../img/promo/promo-bg-big.png");
-    background-repeat: no-repeat;
-    z-index: -1;
   }
 
   .promo__title {
@@ -117,16 +99,15 @@
     margin-bottom: 41px;
   }
 
-  .promo__title::before {
-    width: 552px;
-    height: 499px;
-    top: -83px;
-    right: -506px;
-    background-image: url("../img/promo/promo-product-middle.png");
-  }
-
   .promo__subtitle {
     margin-left: 0;
     margin-bottom: 51px;
+  }
+
+  .promo__product {
+    position: absolute;
+    top: 24px;
+    left: 368px;
+    z-index: 2;
   }
 }
