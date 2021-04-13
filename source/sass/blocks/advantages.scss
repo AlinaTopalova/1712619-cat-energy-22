@@ -216,7 +216,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-top: 73px;
+    padding-top: 72px;
     padding-bottom: 0;
   }
 
@@ -226,8 +226,8 @@
 
   .advantages__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 70px;
+    grid-template-columns: 250px 250px 250px 250px;
+    column-gap: 75px;
   }
 
   .advantages__item:not(:nth-last-child(1)) {
