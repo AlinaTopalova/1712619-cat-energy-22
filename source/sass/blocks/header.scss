@@ -96,7 +96,6 @@
   background-repeat: no-repeat;
 }
 
-
 /* @media tablet*/
 
 @media (min-width: $tablet-width) {
@@ -161,6 +160,14 @@
       opacity: 1;
     }
   }
+
+  .main-nav__item--black-active a {
+    border-bottom: 2px solid $basic-green;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -194,6 +201,10 @@
     font-style: normal;
     font-weight: 400;
     color: $basic-white;
+  }
+
+  .main-nav__item--black a {
+    color: $basic-black;
   }
 
   .main-nav__item--active a {

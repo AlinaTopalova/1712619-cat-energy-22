@@ -207,7 +207,7 @@
   }
 
   .catalog__all {
-    padding-top: 83px;
+    padding-top: 81px;
     padding-bottom: 38px;
     border: 2px solid $basic-grey;
   }
@@ -314,7 +314,7 @@
     grid-column: 1/3;
     grid-row: 2/3;
     width: 632px;
-    height: 38px;
+    height: 39px;
   }
 
   .catalog__bonus {
@@ -322,7 +322,7 @@
     height: 200px;
     padding-top: 72px;
     padding-left: 423px;
-    margin-top: 69px;
+    margin-top: 67px;
     margin-bottom: 76px;
     background-image: url("../img/bonus/bonus-big.jpg");
     background-repeat: no-repeat;
@@ -349,7 +349,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-top: 64px;
+    padding-top: 70px;
   }
 
   .catalog__title {
@@ -360,7 +360,7 @@
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
-    row-gap: 144px;
+    row-gap: 142px;
   }
 
   .catalog__all {

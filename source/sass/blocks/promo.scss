@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position-x: center;
   padding-top: 28px;
+  margin: 0 auto;
 }
 
 .promo__title {
@@ -44,6 +45,7 @@
   .promo {
     position: relative;
     background-image: none;
+    width: 768px;
     padding-top: 52px;
     padding-bottom: 526px;
   }
@@ -55,7 +57,7 @@
     line-height: 60px;
     color: $basic-black;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 117px;
     margin-bottom: 42px;
     align-self: start;
   }
@@ -67,7 +69,7 @@
     line-height: 20px;
     color: $basic-black;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 117px;
     margin-bottom: 49px;
     align-self: start;
   }
@@ -75,12 +77,13 @@
   .promo__button {
     position: relative;
     align-self: flex-start;
+    margin-left: 113px;
   }
 
   .promo__product {
     position: absolute;
-    top: 260px;
-    left: -30px;
+    top: 253px;
+    left: 30px;
     z-index: -1;
   }
 }
@@ -89,6 +92,9 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 190px;
     background-image: none;
     padding-top: 107px;
     padding-bottom: 266px;
@@ -107,7 +113,11 @@
   .promo__product {
     position: absolute;
     top: 24px;
-    left: 368px;
+    left: 557px;
     z-index: 2;
+  }
+
+  .promo__button {
+    margin-left: 0;
   }
 }

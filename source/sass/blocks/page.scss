@@ -6,9 +6,10 @@
   .page::after {
     content: "";
     position: absolute;
-    width: 720px;
     height: 694px;
     left: 50%;
+    right: 0;
+    background-size: cover;
     background-image: url("../img/promo/promo-bg-big.png");
     background-repeat: no-repeat;
     z-index: -1;
