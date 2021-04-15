@@ -1,0 +1,17 @@
+@media (min-width: $desktop-width) {
+  .page {
+    position: relative;
+  }
+
+  .page::after {
+    content: "";
+    position: absolute;
+    height: 694px;
+    left: 50%;
+    right: 0;
+    background-size: cover;
+    background-image: url("../img/promo/promo-bg-big.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
