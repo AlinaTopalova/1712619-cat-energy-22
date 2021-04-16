@@ -7,6 +7,16 @@
   padding-bottom: 25px;
 }
 
+.card::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  bottom: 0;
+  left: -20px;
+  background-color: $basic-dark-grey1;
+}
+
 .card__img {
   position: absolute;
   left: 35px;
@@ -67,6 +77,10 @@
     row-gap: 0;
   }
 
+  .card::after {
+    display: none;
+  }
+
   .card__img {
     position: absolute;
     left: 50%;
@@ -87,12 +101,13 @@
 
   .card__specs {
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
   }
 
   .card__spec {
     font-size: 16px;
     line-height: 16px;
+    border-bottom: 1px solid $basic-grey5;
   }
 
   .card__spec:not(:nth-last-child(1)) {
@@ -134,7 +149,7 @@
 
   .card__specs {
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 35px;
   }
 
   .card__button {

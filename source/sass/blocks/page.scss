@@ -10,8 +10,12 @@
     left: 50%;
     right: 0;
     background-size: cover;
-    background-image: url("../img/promo/promo-bg-big.png");
+    background-image: url("../img/promo/promo-bg-desktop.jpg");
     background-repeat: no-repeat;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/promo-bg-desktop@2x.jpg");
+    }
   }
 }

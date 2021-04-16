@@ -3,11 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/promo/promo-bg.jpg");
+  background-image: url("../img/promo/promo-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   padding-top: 28px;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo/promo-bg-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .promo__title {

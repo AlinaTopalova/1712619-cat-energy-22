@@ -9,6 +9,10 @@
   padding-bottom: 26px;
 }
 
+.footer__contacts-wrap--catalog {
+  background-color: $basic-grey;
+}
+
 .footer__contacts-title {
   font-size: 16px;
   line-height: 20px;
@@ -36,9 +40,13 @@
   margin: 0 auto;
   width: 320px;
   height: 362px;
-  background-image: url("../img/location/location.jpg");
+  background-image: url("../img/location/location-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location/location-mobile@2x.jpg");
+  }
 }
 
 .footer__links {
@@ -148,6 +156,10 @@
 /*@media tablet*/
 
 @media (min-width: $tablet-width) {
+  .footer__contacts-wrap {
+    background-color: $basic-grey;
+  }
+
   .footer__links-wrap {
     background-color: $basic-grey;
   }
@@ -177,7 +189,11 @@
   .footer__location-map {
     width: 768px;
     height: 400px;
-    background-image: url("../img/location/location-middle.jpg");
+    background-image: url("../img/location/location-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location/location-tablet@2x.jpg");
+    }
   }
 
   .footer__links {
@@ -283,7 +299,11 @@
   .footer__location-map {
     width: 1440px;
     height: 400px;
-    background-image: url("../img/location/location-big.jpg");
+    background-image: url("../img/location/location-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location/location-desktop@2x.jpg");
+    }
   }
 
   .footer__links {

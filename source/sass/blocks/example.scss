@@ -114,6 +114,10 @@
   background-size: contain;
   margin: 0 auto;
   margin-bottom: 19px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slider/cat-fat@2x.png");
+  }
 }
 
 .example__slider-second {
@@ -125,6 +129,10 @@
   margin: 0 auto;
   margin-bottom: 19px;
   background-position-x: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slider/cat-skinny@2x.png");
+  }
 }
 
 .example__slider-selectors {
@@ -294,6 +302,10 @@
     background-size: contain;
     margin: 0 auto;
     margin-bottom: 17px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-fat@2x.png");
+    }
   }
 
   .example__slider-second {
@@ -305,6 +317,10 @@
     margin: 0 auto;
     margin-bottom: 17px;
     background-position-x: 90px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-skinny@2x.png");
+    }
   }
 
   .example__slider-button {
@@ -399,6 +415,10 @@
     background-size: contain;
     margin: 0 auto;
     margin-bottom: 35px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-fat@2x.png");
+    }
   }
 
   .example__slider-second {
@@ -410,5 +430,9 @@
     margin: 0 auto;
     margin-bottom: 35px;
     background-position-x: 90px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-skinny@2x.png");
+    }
   }
 }
