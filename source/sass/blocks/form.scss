@@ -124,6 +124,7 @@
 
 .form__nutrition-item label {
   position: relative;
+  cursor: pointer;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -140,6 +141,10 @@
   height: 31px;
   background-image: url("../img/radio/radio.svg");
   background-repeat: no-repeat;
+}
+
+.form__nutrition-radio:focus + label {
+  outline: 1px solid $basic-grey6;
 }
 
 .form__nutrition-radio + label:hover::before {
@@ -165,13 +170,14 @@
   position: relative;
   font-size: 24px;
   line-height: 26px;
+  margin: 0;
   margin-bottom: 35px;
 }
 
 .form__contacts-legend::after {
   position: absolute;
   content: "";
-  width: 99px;
+  width: 1500px;
   height: 2px;
   top: 16px;
   left: 200px;
@@ -254,7 +260,7 @@
 .form__comment-title::after {
   position: absolute;
   content: "";
-  width: 158px;
+  width: 1500px;
   height: 2px;
   top: 15px;
   left: 143px;
@@ -289,7 +295,7 @@
 .form__extra-legend::after {
   position: absolute;
   content: "";
-  width: 136px;
+  width: 1500px;
   height: 2px;
   top: 16px;
   left: 163px;
@@ -312,6 +318,7 @@
 
 .form__extra-item label {
   position: relative;
+  cursor: pointer;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -331,6 +338,10 @@
 
 .form__extra-checkbox + label:hover::before {
   background-image: url("../img/checkbox/checkbox-hover.svg");
+}
+
+.form__extra-checkbox:focus + label {
+  outline: 1px solid $basic-grey6;
 }
 
 .form__extra-checkbox:disabled + label {
@@ -474,29 +485,26 @@
   /*contacts tablet*/
 
   .form__contacts-legend {
+    position: relative;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
     margin-bottom: 76px;
   }
 
   .form__contacts-legend::before {
     position: absolute;
     content: "";
-    width: 30px;
+    width: 1500px;
     height: 2px;
     top: 21px;
-    left: -70px;
+    left: -1540px;
     background: $basic-green;
   }
 
   .form__contacts-legend::after {
-    position: absolute;
-    content: "";
-    width: 145px;
-    height: 2px;
     top: 21px;
     left: 553px;
-    background: $basic-green;
   }
 
   .form__contacts-item label {
@@ -540,21 +548,16 @@
   .form__comment-title::before {
     position: absolute;
     content: "";
-    width: 30px;
+    width: 1500px;
     height: 2px;
     top: 21px;
-    left: -70px;
+    left: -1540px;
     background: $basic-green;
   }
 
   .form__comment-title::after {
-    position: absolute;
-    content: "";
-    width: 478px;
-    height: 2px;
     top: 21px;
     left: 220px;
-    background: $basic-green;
   }
 
   .form__comment-input::placeholder {
@@ -581,21 +584,16 @@
   .form__extra-legend::before {
     position: absolute;
     content: "";
-    width: 30px;
+    width: 1500px;
     height: 2px;
     top: 21px;
-    left: -70px;
+    left: -1540px;
     background: $basic-green;
   }
 
   .form__extra-legend::after {
-    position: absolute;
-    content: "";
-    width: 446px;
-    height: 2px;
     top: 21px;
     left: 252px;
-    background: $basic-green;
   }
 
   .form__extra-list {
@@ -704,23 +702,11 @@
   }
 
   .form__contacts-legend::before {
-    position: absolute;
-    content: "";
-    width: 70px;
-    height: 2px;
     top: 23px;
-    left: -110px;
-    background: $basic-green;
   }
 
   .form__contacts-legend::after {
-    position: absolute;
-    content: "";
-    width: 778px;
-    height: 2px;
     top: 23px;
-    left: 553px;
-    background: $basic-green;
   }
 
   /*comment desktop*/
@@ -730,23 +716,12 @@
   }
 
   .form__comment-title::before {
-    position: absolute;
-    content: "";
-    width: 70px;
-    height: 2px;
     top: 22px;
-    left: -110px;
-    background: $basic-green;
   }
 
   .form__comment-title::after {
-    position: absolute;
-    content: "";
-    width: 1108px;
-    height: 2px;
     top: 22px;
     left: 222px;
-    background: $basic-green;
   }
 
   /*extra desktop*/
@@ -760,17 +735,17 @@
   .form__extra-legend::before {
     position: absolute;
     content: "";
-    width: 70px;
+    width: 1500px;
     height: 2px;
     top: 23px;
-    left: -110px;
+    left: -1540px;
     background: $basic-green;
   }
 
   .form__extra-legend::after {
     position: absolute;
     content: "";
-    width: 1078px;
+    width: 1500px;
     height: 2px;
     top: 24px;
     left: 252px;
