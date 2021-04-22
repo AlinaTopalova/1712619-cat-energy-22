@@ -18,8 +18,8 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--opened">
-          <button class="main-nav__toogle" type="button">
+        <nav class="main-nav main-nav--closed .main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
@@ -42,11 +42,11 @@
                 <ul class="form__data-list">
                   <li class="form__data-item">
                     <label for id="name">Имя:*</label>
-                    <input class="form__data-name" id="name" type="text" name="user-name" placeholder="БАРСИК">
+                    <input class="form__data-name" id="name" type="text" name="user-name" placeholder="БАРСИК" required>
                   </li>
                   <li class="form__data-item">
                     <label for id="weight">Вес (кг):*</label>
-                    <input class="form__data-weight"  id="weight" type="text" name="user-weight" placeholder="7">
+                    <input class="form__data-weight"  id="weight" type="text" name="user-weight" placeholder="7" required>
                   </li>
                   <li class="form__data-item">
                     <label for id="age">Возраст (лет):</label>
@@ -57,7 +57,7 @@
               <fieldset class="form__nutrition">
                 <ul class="form__nutrition-list">
                   <li class="form__nutrition-item">
-                    <input class="form__input-radio visually-hidden" type="radio"
+                    <input class="form__nutrition-radio visually-hidden" type="radio"
                     name="nutrition-kind" value="slimming" id="slimming" checked>
                       <label for="slimming">Похудение</label>
                   </li>
@@ -79,33 +79,33 @@
                 <ul class="form__contacts-list">
                   <li class="form__contacts-item">
                     <label for="email">E-mail:*</label>
-                    <input class="form__contacts-email" id="email" type="email" placeholder="kuklachev@gmail.com">
+                    <input class="form__contacts-email" id="email" type="email" placeholder="kuklachev@gmail.com" required>
                   </li>
                   <li class="form__contacts-item">
-                    <label for="phone">Телефон:*</label><input class="form__contacts-phone" id="phone" type="tel" placeholder="8 (960) 900-60-90">
+                    <label for="phone">Телефон:*</label><input class="form__contacts-phone" id="phone" type="tel" placeholder="8 (960) 900-60-90" required>
                   </li>
               </ul>
             </fieldset>
             <fieldset class="form__comment">
               <label class="form__comment-title">Комментарий</label>
-              <textarea class="form__comment-input" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__comment-input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__extra">
               <legend class="form__extra-legend">Дополнительно</legend>
               <ul class="form__extra-list">
                 <li class="form__extra-item">
                   <input class="form__extra-checkbox visually-hidden" type="checkbox"
-                  name="extra-kind" value="sweetener" id="sweetener" checked>
+                  name="extra-kind" value="sweetener" id="sweetener">
                     <label for="sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="form__extra-item">
                   <input class="form__extra-checkbox visually-hidden" type="checkbox"
-                  name="extra-kind" value="water" id="water" checked>
+                  name="extra-kind" value="water" id="water" checked disabled>
                     <label for="water">Питьевая вода</label>
                 </li>
                 <li class="form__extra-item">
                   <input class="form__extra-checkbox visually-hidden" type="checkbox"
-                  name="extra-kind" value="milk" id="milk">
+                  name="extra-kind" value="milk" id="milk" checked>
                     <label for="milk">Молоко</label>
                 </li>
                 <li class="form__extra-item">
@@ -124,13 +124,15 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <section class="footer__contacts">
-            <h3 class="footer__contacts-title">Приглашаем<br>
-            к&nbsp;сотрудничеству дилеров!</h3>
-            <p class="footer__contacts-address">ул. Большая
-            Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
-        </section>
+      <div class="footer__contacts-wrap">
+        <div class="container">
+          <section class="footer__contacts">
+              <h3 class="footer__contacts-title">Приглашаем<br>
+              к&nbsp;сотрудничеству дилеров!</h3>
+              <p class="footer__contacts-address">ул. Большая
+              Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+          </section>
+        </div>
       </div>
       <div class="footer__wrap">
         <section class="footer__location">
@@ -156,5 +158,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

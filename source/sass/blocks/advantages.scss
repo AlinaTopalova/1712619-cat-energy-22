@@ -245,19 +245,4 @@
   .advantages__item:nth-child(4) {
     width: 250px;
   }
-
-  .advantages__item:nth-child(2)::after {
-    top: 0;
-    left: 115px;
-  }
-
-  .advantages__item:nth-child(3)::after {
-    top: 0;
-    left: 115px;
-  }
-
-  .advantages__item:nth-child(4)::after {
-    top: 0;
-    left: 123px;
-  }
 }
