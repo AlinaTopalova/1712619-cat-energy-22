@@ -132,6 +132,10 @@
   margin-left: 45px;
 }
 
+.form__nutrition-radio {
+  display: none;
+}
+
 .form__nutrition-radio + label::before {
   content: "";
   position: absolute;
@@ -325,6 +329,10 @@
   margin-left: 45px;
 }
 
+.form__extra-checkbox {
+  display: none;
+}
+
 .form__extra-checkbox + label::before {
   content: "";
   position: absolute;
@@ -412,15 +420,13 @@
   }
 
   .form__data-item input {
-    padding-left: 18px;
     min-height: 52px;
     font-size: 20px;
-    line-height: 30px;
   }
 
   .form__data-item input::placeholder {
     font-size: 20px;
-    line-height: 30px;
+    display: flex;
   }
 
   .form__data-item:not(:nth-last-child(1)) {
