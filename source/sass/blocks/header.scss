@@ -21,6 +21,14 @@
   background-color: $basic-grey6;
 }
 
+.header__logo-tablet {
+  display: none;
+}
+
+.header__logo-desktop {
+  display: none;
+}
+
 
 /*navigation*/
 
@@ -129,9 +137,12 @@
     display: none;
   }
 
-  .header__logo img {
-    width: 174px;
-    height: 51px;
+  .header__logo-tablet {
+    display: block;
+  }
+
+  .header__logo-mobile {
+    display: none;
   }
 
   .header__logo-image:hover {
@@ -201,9 +212,12 @@
     padding-top: 51px;
   }
 
-  .header__logo-image img {
-    width: 202px;
-    height: 59px;
+  .header__logo-desktop {
+    display: block;
+  }
+
+  .header__logo-tablet {
+    display: none;
   }
 
   .header__logo-image:hover {

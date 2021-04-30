@@ -24,26 +24,16 @@
   padding-left: 20px;
 }
 
-.nutrition__item--cat::before {
+.nutrition__item--cat {
   position: absolute;
-  content: "";
-  width: 50px;
-  height: 53px;
   top: 20px;
   left: 22px;
-  background-image: url("../img/nutrition/cat.svg");
-  background-repeat: no-repeat;
 }
 
-.nutrition__item--puma::before {
+.nutrition__item--puma {
   position: absolute;
-  content: "";
-  width: 67px;
-  height: 50px;
-  top: 24px;
-  left: 14px;
-  background-image: url("../img/nutrition/puma.svg");
-  background-repeat: no-repeat;
+  top: 23px;
+  left: 13px;
 }
 
 .nutrition__item::after {
@@ -80,6 +70,14 @@
   margin-bottom: 42px;
 }
 
+.nutrition__arrow {
+  position: absolute;
+  top: 2px;
+  left: 100px;
+  width: 24px;
+  height: 12px;
+}
+
 .nutrition__link {
   position: relative;
   font-size: 16px;
@@ -89,31 +87,17 @@
   color: $basic-black;
 }
 
+.nutrition__link:hover .nutrition__arrow {
+  top: 2px;
+  left: 99px;
+  width: 32px;
+  height: 12px;
+}
+
 .nutrition__link:focus {
   opacity: 0.3;
 }
 
-.nutrition__link::before {
-  position: absolute;
-  content: "";
-  width: 32px;
-  height: 11px;
-  top: 2px;
-  left: 100px;
-  background-image: url("../img/nutrition/arrow.svg");
-  background-repeat: no-repeat;
-}
-
-.nutrition__link:hover::before {
-  position: absolute;
-  content: "";
-  width: 32px;
-  height: 11px;
-  top: 2px;
-  left: 100px;
-  background-image: url("../img/nutrition/arrow-big.svg");
-  background-repeat: no-repeat;
-}
 
 /*@media tablet*/
 
@@ -160,29 +144,27 @@
     width: 340px;
   }
 
-  .nutrition__item--cat::before {
+  .nutrition__item--cat {
     width: 200px;
     height: 211px;
-    top: 82px;
+    top: 80px;
     left: 446px;
-    background-image: url("../img/nutrition/cat-tablet.svg");
   }
 
-  .nutrition__item--puma::before {
+  .nutrition__item--puma {
     width: 268px;
     height: 200px;
-    top: 92px;
-    left: 412px;
-    background-image: url("../img/nutrition/puma-tablet.svg");
+    top: 90px;
+    left: 411px;
   }
 
-  .nutrition__link::before {
-    top: 11px;
+  .nutrition__arrow {
+    top: 8px;
     left: 132px;
   }
 
-  .nutrition__link:hover::before {
-    top: 11px;
+  .nutrition__link:hover .nutrition__arrow {
+    top: 8px;
     left: 132px;
   }
 
@@ -230,28 +212,26 @@
     width: 457px;
   }
 
-  .nutrition__item--cat::before {
+  .nutrition__item--cat {
     width: 100px;
     height: 106px;
-    top: 40px;
-    left: 52px;
-    background-image: url("../img/nutrition/cat-desktop.svg");
+    top: 41px;
+    left: 51px;
   }
 
-  .nutrition__item--puma::before {
+  .nutrition__item--puma {
     width: 134px;
     height: 100px;
-    top: 47px;
-    left: 34px;
-    background-image: url("../img/nutrition/puma-desktop.svg");
+    top: 46px;
+    left: 33px;
   }
 
-  .nutrition__link::before {
+  .nutrition__arrow {
     top: 8px;
     left: 134px;
   }
 
-  .nutrition__link:hover::before {
+  .nutrition__link:hover .nutrition__arrow {
     top: 8px;
     left: 134px;
   }
