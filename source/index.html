@@ -29,7 +29,7 @@
             </svg>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed .main-nav--nojs">
+        <nav class="main-nav main-nav--opened .main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -48,17 +48,17 @@
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
             <a href="form.html" class="button promo__button">Подобрать программу</a>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop.webp 1x, img/promo/promo-product-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.webp 1x, img/promo/promo-product-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/promo/promo-product.webp 1x, img/promo/promo-product@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop.png 1x, img/promo/promo-product-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.png 1x, img/promo/promo-product-tablet@2x.png 2x">
-          <img class="promo__product" src="img/promo/promo-product.png" srcset="img/promo/promo-product@2x.png 2x" alt="Упаковка Кэт Энерджи со вкусом курицы">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop@1x.webp 1x, img/promo/promo-product-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/promo-product-tablet@1x.webp 1x, img/promo/promo-product-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/promo/promo-product@1x.webp 1x, img/promo/promo-product@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop@1x.png 1x, img/promo/promo-product-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet@1x.png 1x, img/promo/promo-product-tablet@2x.png 2x">
+          <img class="promo__product" src="img/promo/promo-product@1x.png" srcset="img/promo/promo-product@2x.png 2x" alt="Упаковка Кэт Энерджи со вкусом курицы">
         </picture>
       </section>
       <div class="container">
-      <section class="nutrition">
-        <h2 class="visually-hidden">Программа питания</h2>
+        <section class="nutrition">
+          <h2 class="visually-hidden">Программа питания</h2>
           <ul class="nutrition__list">
             <li class="nutrition__item">
               <svg class="nutrition__item--cat" width="50" height="53" role="img" aria-label="Иконка  сидящего стройного кота">
@@ -67,11 +67,7 @@
               <h3 class="nutrition__title">Похудение</h3>
               <p class="nutrition__descr">Ваш кот весит больше собаки и почти утратил способность лазить
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="#" class="nutrition__link">Каталог SLIM
-                <svg class="nutrition__arrow" width="24" height="12">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-              </a>
+              <a href="#" class="nutrition__link">Каталог SLIM</a>
             </li>
             <li class="nutrition__item">
               <svg class="nutrition__item--puma" width="67" height="50" role="img" aria-label="Иконка мускулистого кота">
@@ -80,11 +76,7 @@
               <h3 class="nutrition__title">Набор массы</h3>
               <p class="nutrition__descr nutrition__descr-small">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="#" class="nutrition__link">Каталог PRO
-                <svg class="nutrition__arrow" width="24" height="12">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-              </a>
+              <a href="#" class="nutrition__link">Каталог PRO</a>
             </li>
           </ul>
         </section>
@@ -137,20 +129,21 @@
               </div>
             </div>
             <div class="example__slider">
-            <div class="example__slider-first" hidden></div>
-            <div class="example__slider-second"></div>
-            <div class="example__slider-selectors">
-            <button class="example__slider-button example__slider-button--active" aria-label="Было">Было</button>
-            <div class="example__slider-selector">
-              <div class="example__slider-toggle" tabindex="0" style="left: 5%;" aria-label="Ползунок для изменения веса кота"></div>
+              <div class="example__slider-first" hidden></div>
+              <div class="example__slider-second"></div>
+              <div class="example__slider-selectors">
+                <button class="example__slider-button example__slider-button--active" aria-label="Было">Было</button>
+                <div class="example__slider-selector">
+                <div class="example__slider-toggle" tabindex="0" style="left: 5%;" aria-label="Ползунок для изменения веса кота"></div>
+              </div>
+              <div class="example__range-filter">
+                <div class="example__range-toggle" style="left: 47%;" tabindex=0 aria-label="Ползунок для изменения веса кота"></div>
+                </div>
+                <button class="example__slider-button" tabindex="0" aria-label="Стало">Стало</button>
+              </div>
             </div>
-            <div class="example__range-filter">
-              <div class="example__range-toggle" style="left: 47%;" aria-label="Ползунок для изменения веса кота"></div>
-            </div>
-            <button class="example__slider-button" tabindex="0" aria-label="Стало">Стало</button>
           </div>
         </div>
-      </div>
       </section>
     </main>
     <footer class="footer">
@@ -160,7 +153,7 @@
             <h3 class="footer__contacts-title">Приглашаем<br>
             к&nbsp;сотрудничеству дилеров!</h3>
             <p class="footer__contacts-address">ул. Большая
-            Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+            Конюшенная,д.19/8<span>Санкт-Петербург</span></p>
         </section>
       </div>
       <div class="footer__wrap">

@@ -20,7 +20,7 @@
   background-color: $basic-grey;
   padding-top: 30px;
   padding-bottom: 22px;
-  padding-right: 32px;
+  padding-right: 25px;
   padding-left: 20px;
 }
 
@@ -52,12 +52,12 @@
 
 .nutrition__title {
   font-size: 24px;
-  line-height: 37px;
+  line-height: 38px;
   font-weight: 400;
   text-transform: uppercase;
   padding-left: 71px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .nutrition__descr {
@@ -70,14 +70,6 @@
   margin-bottom: 42px;
 }
 
-.nutrition__arrow {
-  position: absolute;
-  top: 2px;
-  left: 100px;
-  width: 24px;
-  height: 12px;
-}
-
 .nutrition__link {
   position: relative;
   font-size: 16px;
@@ -87,11 +79,24 @@
   color: $basic-black;
 }
 
-.nutrition__link:hover .nutrition__arrow {
+
+.nutrition__link::after {
+  position: absolute;
+  content: "";
   top: 2px;
-  left: 99px;
+  left: 100px;
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/arrow/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.nutrition__link:hover::after {
+  top: 2px;
+  left: 100px;
   width: 32px;
   height: 12px;
+  background-image: url("../img/arrow/arrow-active.svg");
 }
 
 .nutrition__link:focus {
@@ -158,18 +163,18 @@
     left: 411px;
   }
 
-  .nutrition__arrow {
-    top: 8px;
-    left: 132px;
-  }
-
-  .nutrition__link:hover .nutrition__arrow {
-    top: 8px;
-    left: 132px;
-  }
-
   .nutrition__item::after {
     display: none;
+  }
+
+  .nutrition__link::after {
+    top: 8px;
+    left: 131px;
+  }
+
+  .nutrition__link:hover::after {
+    top: 8px;
+    left: 131px;
   }
 }
 
@@ -224,15 +229,5 @@
     height: 100px;
     top: 46px;
     left: 33px;
-  }
-
-  .nutrition__arrow {
-    top: 8px;
-    left: 134px;
-  }
-
-  .nutrition__link:hover .nutrition__arrow {
-    top: 8px;
-    left: 134px;
   }
 }
