@@ -43,6 +43,7 @@
 
 .form__data-item {
   display: flex;
+  align-items: center;
 }
 
 .form__data-item label {
@@ -56,8 +57,10 @@
 
 .form__data-item input {
   flex-grow: 1;
+  padding-top: 13px;
+  padding-bottom: 14px;
   padding-left: 16px;
-  min-height: 46px;
+  height: 46px;
   border: 1px solid $basic-grey3;
   outline: none;
   font-size: 16px;
@@ -217,8 +220,10 @@
 
 .form__contacts-item input {
   flex-grow: 1;
+  padding-top: 13px;
   padding-left: 15px;
-  min-height: 46px;
+  padding-bottom: 14px;
+  height: 46px;
   border: 1px solid $basic-grey3;
   outline: none;
   font-size: 16px;
@@ -244,6 +249,36 @@
 
 .form__contacts-item input:invalid {
   border: 2px solid $basic-red;
+}
+
+.form__contacts-email {
+  background-image: url("../img/form/icon-email.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 15px;
+  background-position: top 15px right 13px;
+}
+
+.form__contacts-email:focus {
+  background-image: url("../img/form/icon-email-active.svg");
+}
+
+.form__contacts-email:invalid {
+  background-image: url("../img/form/icon-email-error.svg");
+}
+
+.form__contacts-phone {
+  background-image: url("../img/form/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 21px;
+  background-position: top 12px right 11px;
+}
+
+.form__contacts-phone:focus {
+  background-image: url("../img/form/icon-phone-active.svg");
+}
+
+.form__contacts-phone:invalid {
+  background-image: url("../img/form/icon-phone-error.svg");
 }
 
 /*form-comment*/
@@ -420,7 +455,9 @@
   }
 
   .form__data-item input {
-    min-height: 52px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    height: 52px;
     font-size: 20px;
   }
 
@@ -520,8 +557,10 @@
   }
 
   .form__contacts-item input {
-    min-height: 52px;
-    padding-left: 22px;
+    height: 52px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -541,6 +580,14 @@
 
   .form__contacts-list {
     margin-bottom: 65px;
+  }
+
+  .form__contacts-email {
+    background-position: top 16px right 15px;
+  }
+
+  .form__contacts-phone {
+    background-position: top 14px right 14px;
   }
 
   /*comment tablet*/
@@ -569,9 +616,12 @@
   .form__comment-input::placeholder {
     font-size: 20px;
     line-height: 30px;
+    align-self: center;
   }
 
   .form__comment-input {
+    font-size: 20px;
+    line-height: 30px;
     padding-left: 19px;
     padding-right: 19px;
     padding-bottom: 10px;
@@ -713,6 +763,14 @@
 
   .form__contacts-legend::after {
     top: 23px;
+  }
+
+  .form__contacts-email {
+    background-position: top 18px right 17px;
+  }
+
+  .form__contacts-phone {
+    background-position: top 14px right 13px;
   }
 
   /*comment desktop*/
