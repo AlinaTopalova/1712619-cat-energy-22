@@ -31,6 +31,7 @@
 .card__title {
   grid-column: 2/3;
   grid-row: 1/2;
+  align-self: center;
 }
 
 .card__title h3 {
@@ -41,6 +42,7 @@
   font-weight: 400;
   color: black;
   margin: 0;
+  width: 76px;
 }
 
 .card__specs {
@@ -97,6 +99,7 @@
     line-height: 23px;
     margin-bottom: 21px;
     text-align: center;
+    width: 150px;
   }
 
   .card__specs {
