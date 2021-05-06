@@ -9,7 +9,7 @@
   padding-bottom: 26px;
 }
 
-.footer__contacts-wrap--grey {
+.footer__contacts-wrap {
   background-color: $basic-grey;
 }
 
@@ -167,10 +167,6 @@ iframe {
 /*@media tablet*/
 
 @media (min-width: $tablet-width) {
-  .footer__contacts-wrap {
-    background-color: $basic-grey;
-  }
-
   .footer__links-wrap {
     background-color: $basic-grey;
   }

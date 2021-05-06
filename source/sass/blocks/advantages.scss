@@ -35,7 +35,7 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   top: -2px;
   left: 0;
   background-image: url("../img/advantages/leaf.svg");
@@ -46,7 +46,7 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   top: -2px;
   left: 0;
   background-image: url("../img/advantages/water.svg");
@@ -57,7 +57,7 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   top: -2px;
   left: 0;
   background-image: url("../img/advantages/fork.svg");
@@ -68,7 +68,7 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   top: -2px;
   left: 0;
   background-image: url("../img/advantages/clock.svg");

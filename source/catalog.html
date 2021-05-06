@@ -29,7 +29,7 @@
             </svg>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -41,8 +41,8 @@
         </nav>
       </header>
     </div>
-    <div class="container">
-      <main class="catalog">
+    <main class="catalog">
+      <div class="container">
         <h1 class="catalog__title">Каталог продукции</h1>
         <section class="catalog__products">
           <ul class="catalog__products-list">
@@ -134,7 +134,7 @@
                 <source type="image/webp" srcset="img/products/fish-1000@1x.webp 1x, img/products/fish-1000@2x.webp 2x">
 
                 <source media="(min-width: 1440px)" srcset="img/products/fish-1000-desktop@1x.png 1x, img/products/fish-1000-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/products/fish-1000-tablet@1x.png 1x, img/products/fish-1000-tablet@2x.png">
+                <source media="(min-width: 768px)" srcset="img/products/fish-1000-tablet@1x.png 1x, img/products/fish-1000-tablet@2x.png 2x">
                 <img class="card__img card__img--big" src="img/products/fish-1000@1x.png" srcset="img/products/fish-1000@2x.png 2x" alt="Питание для кота Cat Energy PRO 1000 г с рыбой">
               </picture>
               <a class="card__title" href="#"><h3>Cat Energy PRO 1000 г</h3></a>
@@ -287,10 +287,10 @@
               кота в подарок!</p>
           </section>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
     <footer class="footer">
-      <div class="footer__contacts-wrap footer__contacts-wrap--grey">
+      <div class="footer__contacts-wrap">
         <div class="container">
           <section class="footer__contacts">
               <h3 class="footer__contacts-title">Приглашаем<br>
@@ -307,7 +307,7 @@
         <div class="footer__links-wrap">
           <div class="container">
             <section class="footer__links">
-              <a class="footer__links-logo" href="index.html">Cat Energy
+              <a href="index.html" class="footer__links-logo">Cat Energy
                 <svg width="128" height="24" role="img" aria-label="Логотип Кэт Энэрджи, переход на главную страницу">
                   <use class="footer__links-logo-image" xlink:href="img/sprite.svg#footer-logo"></use>
                 </svg>
@@ -315,22 +315,22 @@
               <div class="footer__links-social">
                 <ul class="footer__links-social-list">
                   <li class="footer__links-social-item">
-                    <a class="footer__social-link" href="https://vk.com/htmlacademy">Вконтакте
-                      <svg class="footer__social-link--vk" width="23" height="16" aria-label="Ссылка на страницу в Вконтакте">
+                    <a href="https://vk.com/htmlacademy">Вконтакте
+                      <svg class="footer__social-link footer__social-link--vk" width="23" height="16" aria-label="Ссылка на страницу в Вконтакте">
                         <use xlink:href="img/sprite.svg#vk"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="footer__links-social-item">
-                    <a class="footer__social-link" href="https://www.instagram.com/htmlacademy">Инстаграм
-                      <svg class="footer__social-link--instagram" width="16" height="16" aria-label="Ссылка на страницу в Инстаграм">
+                    <a href="https://www.instagram.com/htmlacademy">Инстаграм
+                      <svg class="footer__social-link footer__social-link--instagram" width="16" height="16" aria-label="Ссылка на страницу в Инстаграм">
                         <use xlink:href="img/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="footer__links-social-item">
-                    <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">facebook
-                      <svg class="footer__social-link--facebook" width="20" height="21" aria-label="Ссылка на страницу в Фэйсбук">
+                    <a href="https://www.facebook.com/htmlacademy">facebook
+                      <svg class="footer__social-link footer__social-link--facebook" width="20" height="21" aria-label="Ссылка на страницу в Фэйсбук">
                         <use xlink:href="img/sprite.svg#facebook"></use>
                       </svg>
                     </a>
@@ -338,10 +338,10 @@
                 </ul>
               </div>
               <a class="footer__links-copyright" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg class="footer__copyright--text" width="114" height="18" role="img" aria-label="Лого HTML Academy">
+                <svg class="footer__copyright footer__copyright--text" width="114" height="18" role="img" aria-label="Лого HTML Academy">
                   <use xlink:href="img/sprite.svg#htmlacademy-text"></use>
                 </svg>
-                <svg class="footer__copyright--icon" width="27" height="34" role="img" aria-label="Лого HTML Academy">
+                <svg class="footer__copyright footer__copyright--icon" width="27" height="34" role="img" aria-label="Лого HTML Academy">
                   <use xlink:href="img/sprite.svg#htmlacademy"></use>
                 </svg>
               </a>
