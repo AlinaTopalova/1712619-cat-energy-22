@@ -24,6 +24,10 @@
   margin-bottom: 40px;
 }
 
+.example__descr br {
+  display: none;
+}
+
 .example__list {
   display: flex;
   justify-content: center;
@@ -240,6 +244,10 @@
     margin-bottom: 51px;
   }
 
+  .example__descr br {
+    display: block;
+  }
+
   .example__data-wrap {
     display: flex;
     justify-content: space-between;
@@ -261,6 +269,7 @@
   .example__value {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 12px;
   }
 
   .example__label {
@@ -373,11 +382,15 @@
     padding-top: 58px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 146px;
+    margin-bottom: 148px;
   }
 
   .example__descr {
     margin-bottom: 69px;
+  }
+
+  .example__descr br {
+    display: none;
   }
 
   .example__data-wrap {
