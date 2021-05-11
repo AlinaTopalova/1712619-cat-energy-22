@@ -123,6 +123,10 @@
   display: flex;
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 /* @media tablet*/
 
 @media (min-width: $tablet-width) {
